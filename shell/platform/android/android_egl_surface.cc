@@ -101,6 +101,7 @@ class AndroidEGLSurfaceDamage {
 
     partial_redraw_supported_ =
         set_damage_region_ != nullptr && swap_buffers_with_damage_ != nullptr;
+    partial_redraw_supported_ = false;
   }
 
   static int GetAPILevel() {
